@@ -5,10 +5,10 @@
         <title>List</title>
     </head>
     <body>
-        {% for restaurant in restaurants %}
-            <a href="#">
+        {% for restaurant in object_list %}
                 <ul>
-                    <li></li>
+                  <a href="/restaurants/detail/{{restaurant.id}}/"><li>{{restaurant.name}}</li>
+                  <li>{{restaurant.description}}</li>
                 </ul>
             </a>
         {% endfor %}
